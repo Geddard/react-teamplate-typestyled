@@ -1,18 +1,18 @@
 module.exports = {
   root: true,
   parser: '@typescript-eslint/parser',
-  plugins: ['react', '@typescript-eslint', 'prettier', 'unused-imports'],
+  plugins: ['react', '@typescript-eslint', 'prettier', 'unused-imports', 'import', 'react-hooks'],
   overrides: [
     {
       files: ['*.ts', '*.tsx'],
       extends: [
         'airbnb-typescript',
-        'airbnb/hooks',
         'eslint:recommended',
         'plugin:react/recommended',
         'plugin:@typescript-eslint/recommended',
         'prettier',
         'plugin:prettier/recommended',
+        'plugin:react-hooks/recommended',
       ],
       parserOptions: {
         project: './tsconfig.json',
@@ -26,7 +26,12 @@ module.exports = {
         '@typescript-eslint/no-explicit-any': 'off',
         '@typescript-eslint/no-unused-vars': ['warn', { ignoreRestSiblings: true }],
         'react/prop-types': 'off',
-        'unused-imports/no-unused-imports': 'warn',
+        '@typescript-eslint/no-unused-vars': 'off',
+        'unused-imports/no-unused-imports': 'error',
+        'unused-imports/no-unused-vars': [
+          'warn',
+          { vars: 'all', varsIgnorePattern: '^_', args: 'after-used', argsIgnorePattern: '^_' },
+        ],
         'react-hooks/rules-of-hooks': 'error',
         'react-hooks/exhaustive-deps': 'error',
         'react/react-in-jsx-scope': 'off',

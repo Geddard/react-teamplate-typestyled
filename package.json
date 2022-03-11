@@ -8,11 +8,15 @@
     "typescript",
     "eslint",
     "eslint-airbnb",
+    "airbnb",
     "prettier",
     "@emotion",
     "emotion",
     "styled-components"
   ],
+  "engines": {
+    "node": ">=10"
+  },
   "files": [
     "template",
     "template.json"
@@ -20,6 +24,7 @@
   "version": "1.0.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Geddard/react-teamplate-typestyled"
-  }
+    "url": "https://github.com/Geddard/react-teamplate-typestyled.git"
+  },
+  "license": "MIT"
 }
