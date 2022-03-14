@@ -1,6 +1,10 @@
+## 1.0.2 (14-03-2022)
+
+v1.0.2 fixing changelog
+
 ## 1.0.1 (14-03-2022)
 
-v4.0.3 is a maintenance release that includes minor bug fixes and dependency updates.
+v1.0.1 minor update fixing eslint and tsconfig with new values
 
 #### Updates
 
