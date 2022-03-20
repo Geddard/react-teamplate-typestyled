@@ -1,3 +1,8 @@
+## 1.0.3 (20-03-2022)
+
+v1.0.3 Fixing eslintrc and package.json with missing dependencies and rules. Also updating README
+with an explanation on @emotion babel macros.
+
 ## 1.0.2 (14-03-2022)
 
 v1.0.2 fixing changelog

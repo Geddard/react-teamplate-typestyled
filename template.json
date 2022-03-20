@@ -15,6 +15,7 @@
       "eslint": "~8.10.0",
       "eslint-config-airbnb-typescript": "~16.1.1",
       "eslint-config-prettier": "~8.5.0",
+      "eslint-plugin-import": "^2.25.4",
       "eslint-plugin-jsx-a11y": "~6.5.1",
       "eslint-plugin-prettier": "~4.0.0",
       "eslint-plugin-react": "~7.29.3",
@@ -28,7 +29,24 @@
       "web-vitals": "~2.1.0"
     },
     "scripts": {
+      "start": "react-scripts start",
+      "build": "react-scripts build",
+      "test": "react-scripts test",
+      "coverage": "react-scripts test --coverage --watchAll=false",
+      "eject": "react-scripts eject",
       "lint": "tsc --noEmit && eslint --ext .js,.jsx,.ts,.tsx src --fix"
+    },
+    "jest": {
+      "coveragePathIgnorePatterns": [
+        "<rootDir>/node_modules/",
+        "<rootDir>/src/state/",
+        "testUtils.tsx",
+        "reportWebVitals.ts",
+        "index.ts*"
+      ]
+    },
+    "eslintConfig": {
+      "extends": "react-app"
     }
   }
 }
