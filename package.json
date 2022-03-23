@@ -1,7 +1,7 @@
 {
   "name": "cra-template-typestyled",
   "main": "template.json",
-  "description": "Opinionated template for CRA with Typescript, @emotion styled-components and airbnb-eslint rules in place",
+  "description": "Opinionated template for CRA with Typescript, styled-components and airbnb-eslint rules in place",
   "keywords": [
     "react",
     "create-react-app",
@@ -10,8 +10,6 @@
     "eslint-airbnb",
     "airbnb",
     "prettier",
-    "@emotion",
-    "emotion",
     "styled-components"
   ],
   "engines": {
@@ -21,10 +19,14 @@
     "template",
     "template.json"
   ],
-  "version": "1.0.3",
+  "version": "1.1.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/Geddard/react-teamplate-typestyled.git"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@types/styled-components": "^5.1.24",
+    "styled-components": "^5.3.3"
+  }
 }

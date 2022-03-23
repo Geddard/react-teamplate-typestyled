@@ -1,3 +1,7 @@
+## 1.1.0 (23-03-2022)
+
+v1.0.4 Removing @emotion in favor of styled-components
+
 ## 1.0.3 (20-03-2022)
 
 v1.0.3 Fixing eslintrc and package.json with missing dependencies and rules. Also updating README

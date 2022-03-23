@@ -1,4 +1,4 @@
-# React App with Typescript, @emotion styled-components and airbnb-eslint rules in place.
+# React App with Typescript, styled-components and airbnb-eslint rules in place.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -44,26 +44,3 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
-
-## Note on @emotion styled-components
-
-If you want to use nested components as selectors, for example:
-
-```
-import styled from '@emotion/styled/macro'
-
-
-const ButtonText = styled.span`
-  //some styles
-`;
-
-const Button = styled.button`
-  //some styles
-
-  ${ButtonText} {
-    //some styles overrides
-  }
-`;
-```
-
-You will need to import the @emotion packages including the babel macro, [here's their guide](https://emotion.sh/docs/babel-macros)
