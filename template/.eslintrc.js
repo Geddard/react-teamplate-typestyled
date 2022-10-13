@@ -1,14 +1,13 @@
 module.exports = {
   root: true,
   parser: '@typescript-eslint/parser',
-  plugins: ['react', '@typescript-eslint', 'prettier', 'unused-imports', 'import', 'react-hooks'],
+  plugins: ['@typescript-eslint', 'prettier', 'unused-imports', 'import', 'react-hooks'],
   overrides: [
     {
       files: ['*.ts', '*.tsx'],
       extends: [
         'airbnb-typescript',
         'eslint:recommended',
-        'plugin:react/recommended',
         'plugin:@typescript-eslint/recommended',
         'prettier',
         'plugin:prettier/recommended',
@@ -18,6 +17,7 @@ module.exports = {
         project: './tsconfig.json',
       },
       rules: {
+        'react/jsx-filename-extension': 'off',
         'prettier/prettier': ['error', {}, { usePrettierrc: true }],
         'no-console': 'warn',
         'prefer-const': 'error',

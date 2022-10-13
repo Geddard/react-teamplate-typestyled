@@ -1,6 +1,11 @@
+## 1.1.1 (13-10-2022)
+
+v1.1.1 Removing unnecessary dependencies from package.json, removing conflicting plugins from eslint
+and adding file-extension rule
+
 ## 1.1.0 (23-03-2022)
 
-v1.0.4 Removing @emotion in favor of styled-components
+v1.1.0 Removing @emotion in favor of styled-components
 
 ## 1.0.3 (20-03-2022)
 
